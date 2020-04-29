@@ -1,0 +1,150 @@
+.wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    font-weight: bold;
+    text-align: center;
+    font-family: Tahoma, sans-serif;
+}
+
+.wrapper > * {
+    padding: 10px;
+    flex: 1 100%;
+}
+
+.header {
+    background: #37ABFF;
+}
+
+.navigation {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
+}
+
+.navigation .spacer {
+    flex-grow: 1;
+}
+
+.navigation a {
+    text-decoration: none;
+    display: block;
+}
+
+.navigation a:not(.logo) {
+    padding: 1em;
+    color: white;
+}
+
+.navigation a:hover {
+    background: #2575C2;
+}
+
+.circle{
+    background: #59B9FF;
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+}
+
+.aside {
+    background: #EDEDED;
+}
+
+.menu {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    list-style: none;
+    margin: 0;
+}
+
+.menu a {
+    text-decoration: none;
+    display: block;
+    color: black !important;
+}
+
+.menu a:not(.logo) {
+    padding: 1em;
+    color: white;
+}
+
+.menu a:hover {
+    background: darkgray;
+}
+
+.main {
+    text-align: left;
+    background: aliceblue;
+}
+
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    background: aliceblue;
+}
+
+.flex-item__card {
+    background: #F3F3F3;
+    padding: 5px;
+    width: 150px;
+    height: 200px;
+    margin-top: 10px;
+    line-height: 150px;
+    text-align: center;
+    box-shadow: 0 0 5px;
+}
+
+.footer {
+    background:  #3C3C3C;
+}
+
+.footer1 {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    list-style: none;
+    margin: 0;
+}
+
+.footer1 a {
+    text-decoration: none;
+    display: block;
+}
+
+.footer1 a:not(.logo) {
+    padding: 1em;
+    color: white;
+}
+
+.footer1 a:hover {
+    background: #343434;
+}
+
+.footer1 .spacer {
+    flex-grow: 1;
+}
+
+@media all and (min-width: 600px) {
+    .aside { flex: 1 0 0; }
+}
+
+@media all and (min-width: 800px) {
+    .main    { flex: 3 0px; }
+    .aside   { order: 1; }
+    .main    { order: 2; }
+    .footer  { order: 4; }
+}
+
+
+
+
+
+
+
